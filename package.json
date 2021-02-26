@@ -1,9 +1,14 @@
 {
   "scripts": {
-    "dev": "netlify-lambda serve api",
+    "dev": "netlify-lambda serve api -c ./webpack.functions.js",
     "build": "netlify-lambda build api"
   },
   "dependencies": {
-    "netlify-lambda": "^2.0.3"
+    "axios": "^0.21.1",
+    "netlify-lambda": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^6.0.2"
   }
 }
